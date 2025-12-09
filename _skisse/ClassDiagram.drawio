@@ -1,0 +1,105 @@
+<mxfile host="65bd71144e">
+    <diagram id="cFJKLwlxzTr4eSnggkY0" name="Page-1">
+        <mxGraphModel dx="942" dy="356" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="10" value="Person" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="366" width="160" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="+ bøker: list(bøker)&lt;div&gt;+ navn: navn(str)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="10" vertex="1">
+                    <mxGeometry y="26" width="160" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="10" vertex="1">
+                    <mxGeometry y="90" width="160" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;div&gt;+ leggtilbok(bok)&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="10" vertex="1">
+                    <mxGeometry y="98" width="160" height="72" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="bøker" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="360" width="250" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="+ Titel: str&lt;div&gt;+ forfater: str (henter fra forfater)&lt;/div&gt;&lt;div&gt;+ utgivels: int&lt;/div&gt;&lt;div&gt;+ utlånt: booleen&lt;/div&gt;&lt;div&gt;+ isbn: int&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="14" vertex="1">
+                    <mxGeometry y="26" width="250" height="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="14" vertex="1">
+                    <mxGeometry y="110" width="250" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&amp;nbsp;&lt;span style=&quot;color: rgb(63, 63, 63); background-color: transparent;&quot;&gt;+ lånnebok(self)&lt;/span&gt;&lt;div&gt;+ leverbok(self)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="14" vertex="1">
+                    <mxGeometry y="118" width="250" height="42" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="11" target="15" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="1..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="23" vertex="1" connectable="0">
+                    <mxGeometry x="-0.8081" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="23" vertex="1" connectable="0">
+                    <mxGeometry x="0.7456" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="37" target="14" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="41" vertex="1" connectable="0">
+                    <mxGeometry x="-0.8201" y="1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="0..*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="41" vertex="1" connectable="0">
+                    <mxGeometry x="0.5786" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="Biblotek" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="10" width="230" height="280" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="+ navn: str&lt;div&gt;+ plass: str&lt;/div&gt;&lt;div&gt;+ bøker: list&lt;/div&gt;&lt;div&gt;+ bokDict: ordbok&lt;/div&gt;&lt;div&gt;+ personer: list&lt;/div&gt;&lt;div&gt;+ personerDict: ordbok&lt;/div&gt;&lt;div&gt;+ forfater: list&lt;/div&gt;&lt;div&gt;+ forfaterDict: ordbok&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="37" vertex="1">
+                    <mxGeometry y="26" width="230" height="134" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="37" vertex="1">
+                    <mxGeometry y="160" width="230" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ leggtilBok(class)&lt;/span&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;+ get_bokDict() &amp;gt; ordbok&lt;br&gt;&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ leggtilperson(class)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ get_personDict() &amp;gt; ordok&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ leggtilforfater(class)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;+ get_forfaterDict() &amp;gt; ordbok&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="37" vertex="1">
+                    <mxGeometry y="168" width="230" height="112" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="Knapp" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="60" y="630" width="160" height="230" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="+ pos: [int,int]&lt;div&gt;+ text: str&lt;/div&gt;&lt;div&gt;+ textColer: tuple&lt;/div&gt;&lt;div&gt;+ fontSize: int&lt;/div&gt;&lt;div&gt;+ font: str&lt;/div&gt;&lt;div&gt;+ buttonSize: [float, float]&lt;/div&gt;&lt;div&gt;+ buttonColer: tuple&lt;/div&gt;&lt;div&gt;+ returnvalue:&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="45" vertex="1">
+                    <mxGeometry y="26" width="160" height="134" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="45" vertex="1">
+                    <mxGeometry y="160" width="160" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="+ rect(): pygame.rect&lt;div&gt;+ click():&amp;nbsp; returnvaluer&lt;/div&gt;&lt;div&gt;+ draw(): tegener kanpen&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="45" vertex="1">
+                    <mxGeometry y="168" width="160" height="62" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="Returnvalue data type er valgfrit" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="230" y="750" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="InputBox" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="600" y="670" width="200" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="+ pos: [float,float]&lt;div&gt;+ size : [float, float]&lt;/div&gt;&lt;div&gt;+coler: tupler&lt;/div&gt;&lt;div&gt;+ text: str&lt;/div&gt;&lt;div&gt;+ font: str&lt;/div&gt;&lt;div&gt;+ fontSize: int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="50" vertex="1">
+                    <mxGeometry y="26" width="200" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="50" vertex="1">
+                    <mxGeometry y="120" width="200" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="+ rect(): pygame.rect&lt;div&gt;+ draw(surface): tegner input box&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="50" vertex="1">
+                    <mxGeometry y="128" width="200" height="42" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="Draw metoden er et vanlig navn i pygame.&lt;div&gt;I draw() behandler og tegner objekte til en pygame surface&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="980" width="330" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="Rect metoden lager en pygame.rect elemnt&lt;div&gt;vanlig bruke for collisin&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="930" width="250" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
